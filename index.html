@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & Profit Session — The Small Business Hotline</title>
+  <meta name="description" content="A 45-minute working session that gives you 5-10 hours back this week AND shows you your 10x profit opportunity. $1,000. Backed by the Frictionless AI model.">
+  <meta property="og:title" content="Reclaim 5–10 Hours a Week. Then 10x Your Profit.">
+  <meta property="og:description" content="The AI & Profit Session: quick wins you can use this week + a gap analysis that shows exactly what your business is leaving on the table.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    /* ── Palette ── */
+    :root {
+      --navy:    #1C2B3A;
+      --teal:    #4E7C6A;
+      --teal-dk: #3A5E50;
+      --teal-lt: #EAF2EE;
+      --beige:   #F5F0E8;
+      --sand:    #EDE8DF;
+      --orange:  #C8540A;
+      --dark:    #1A1A1A;
+      --mid:     #4A4A4A;
+      --muted:   #777;
+      --border:  #D8D3CA;
+      --white:   #FFFFFF;
+      --serif:   'Playfair Display', Georgia, serif;
+      --sans:    'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    /* ── Utility ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .container--narrow { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--navy);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .nav-logo-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .nav-logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .nav-logo-text {
+      color: white;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .nav-logo-text span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+    .nav-cta {
+      background: var(--teal);
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--teal-dk); }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--navy);
+      padding: 80px 0 72px;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--teal);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(32px, 5vw, 58px);
+      font-weight: 900;
+      color: white;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero h1 .accent { color: #7EC8CA; }
+    .hero-sub {
+      font-size: 18px;
+      color: rgba(255,255,255,0.78);
+      max-width: 600px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+    .hero-cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--orange);
+      color: white;
+      text-decoration: none;
+      padding: 18px 40px;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 700;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 20px rgba(200,84,10,0.4);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(200,84,10,0.5);
+    }
+    .hero-note {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+    }
+    .hero-bullets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .hero-bullet {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.8);
+      font-size: 14px;
+    }
+    .hero-bullet::before {
+      content: '✓';
+      color: #7EC8CA;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    /* ── Divider ── */
+    .divider-bar {
+      background: var(--teal);
+      height: 4px;
+      width: 100%;
+    }
+
+    /* ── Stats strip ── */
+    .stats-strip {
+      background: var(--sand);
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .stats-inner {
+      display: flex;
+      justify-content: center;
+      gap: 64px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .stat-item {}
+    .stat-number {
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--teal);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--mid);
+      margin-top: 4px;
+    }
+
+    /* ── Problem section ── */
+    .problem {
+      background: var(--white);
+      padding: 72px 0;
+      text-align: center;
+    }
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .section-body {
+      font-size: 17px;
+      color: var(--mid);
+      line-height: 1.7;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .problem-card {
+      background: var(--beige);
+      border-radius: 10px;
+      padding: 28px 24px;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .problem-card-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .problem-card h3 {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .problem-card p {
+      font-size: 14px;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+
+    /* ── What you get ── */
+    .deliverables {
+      background: var(--navy);
+      padding: 80px 0;
+    }
+    .deliverables .section-title { color: white; }
+    .deliverables .section-label { color: #7EC8CA; }
+    .deliverables .section-body { color: rgba(255,255,255,0.72); }
+    .deliverables-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+    @media (max-width: 640px) {
+      .deliverables-grid { grid-template-columns: 1fr; }
+    }
+    .deliverable-card {
+      border-radius: 12px;
+      padding: 36px 32px;
+      position: relative;
+    }
+    .deliverable-card--1 {
+      background: var(--teal);
+      border: 2px solid rgba(255,255,255,0.15);
+    }
+    .deliverable-card--2 {
+      background: rgba(255,255,255,0.06);
+      border: 2px solid rgba(255,255,255,0.12);
+    }
+    .deliverable-number {
+      font-family: var(--serif);
+      font-size: 48px;
+      font-weight: 900;
+      color: rgba(255,255,255,0.25);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .deliverable-card h3 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+    .deliverable-card p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .deliverable-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+    .deliverable-list {
+      list-style: none;
+      margin-top: 16px;
+    }
+    .deliverable-list li {
+      font-size: 14px;
+      color: rgba(255,255,255,0.82);
+      padding: 5px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .deliverable-list li::before {
+      content: '→';
+      color: #7EC8CA;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── How it works ── */
+    .how {
+      background: var(--beige);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+      position: relative;
+    }
+    @media (max-width: 640px) {
+      .steps { grid-template-columns: 1fr; }
+    }
+    .step {
+      text-align: left;
+    }
+    .step-number {
+      width: 44px;
+      height: 44px;
+      background: var(--teal);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 16px;
+      font-family: var(--serif);
+    }
+    .step h3 {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .step p {
+      font-size: 15px;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+    .step-note {
+      font-size: 13px;
+      color: var(--teal);
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    /* ── For / Not For ── */
+    .fit {
+      background: var(--white);
+      padding: 80px 0;
+    }
+    .fit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 48px;
+    }
+    @media (max-width: 640px) {
+      .fit-grid { grid-template-columns: 1fr; }
+    }
+    .fit-card {
+      border-radius: 12px;
+      padding: 32px;
+    }
+    .fit-card--yes {
+      background: var(--teal-lt);
+      border: 1px solid #B8DCDD;
+    }
+    .fit-card--no {
+      background: #FBF8F5;
+      border: 1px solid var(--border);
+    }
+    .fit-card h3 {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .fit-card--yes h3 { color: var(--teal-dk); }
+    .fit-card--no h3 { color: var(--mid); }
+    .fit-list {
+      list-style: none;
+    }
+    .fit-list li {
+      font-size: 15px;
+      color: var(--mid);
+      padding: 8px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .fit-list li:last-child { border-bottom: none; }
+    .fit-yes-icon { color: var(--teal); font-weight: 700; flex-shrink: 0; }
+    .fit-no-icon { color: #999; flex-shrink: 0; }
+
+    /* ── Differentiator ── */
+    .diff {
+      background: var(--sand);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    @media (max-width: 640px) {
+      .diff-grid { grid-template-columns: 1fr; }
+    }
+    .diff-card {
+      background: white;
+      border-radius: 10px;
+      padding: 28px 24px;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .diff-card--highlight {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+    .diff-card-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .diff-card--highlight .diff-card-label { color: #7EC8CA; }
+    .diff-card:not(.diff-card--highlight) .diff-card-label { color: var(--muted); }
+    .diff-card h3 {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .diff-card--highlight h3 { color: white; }
+    .diff-card:not(.diff-card--highlight) h3 { color: var(--navy); }
+    .diff-card p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .diff-card--highlight p { color: rgba(255,255,255,0.75); }
+    .diff-card:not(.diff-card--highlight) p { color: var(--mid); }
+
+    /* ── The model ── */
+    .model {
+      background: var(--white);
+      padding: 80px 0;
+    }
+    .model-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 760px) {
+      .model-inner { grid-template-columns: 1fr; }
+    }
+    .model-content .section-label { text-align: left; }
+    .model-content .section-title { text-align: left; }
+    .model-content .section-body { text-align: left; max-width: 100%; }
+    .model-stages {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .model-stage {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: 8px;
+      background: var(--beige);
+      border: 1px solid var(--border);
+    }
+    .model-stage-num {
+      width: 32px;
+      height: 32px;
+      background: var(--teal);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .model-stage-text h4 {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--navy);
+    }
+    .model-stage-text p {
+      font-size: 13px;
+      color: var(--mid);
+    }
+    .model-visual {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 36px 32px;
+    }
+    .model-visual-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .model-visual-center {
+      background: var(--teal);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .model-visual-center span:first-child {
+      font-size: 10px;
+      color: rgba(255,255,255,0.7);
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .model-visual-center span:last-child {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+    }
+    .model-rings {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .model-ring {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .model-ring-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: white;
+    }
+    .model-ring-tag {
+      font-size: 11px;
+      color: #7EC8CA;
+      font-weight: 600;
+    }
+    .model-principle {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .model-principle-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 6px;
+      padding: 8px 6px;
+      text-align: center;
+    }
+    .model-principle-item span:first-child {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #7EC8CA;
+      letter-spacing: 0.5px;
+    }
+    .model-principle-item span:last-child {
+      display: block;
+      font-size: 10px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+
+    /* ── Upsell bridge ── */
+    .bridge {
+      background: var(--teal);
+      padding: 60px 0;
+      text-align: center;
+    }
+    .bridge h2 {
+      font-family: var(--serif);
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 700;
+      color: white;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .bridge p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.82);
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .bridge-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 760px;
+      margin: 0 auto 40px;
+    }
+    @media (max-width: 640px) {
+      .bridge-cards { grid-template-columns: 1fr; }
+    }
+    .bridge-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 10px;
+      padding: 24px 20px;
+      text-align: left;
+    }
+    .bridge-card-price {
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 4px;
+    }
+    .bridge-card-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 10px;
+    }
+    .bridge-card p {
+      font-size: 13px;
+      margin: 0;
+    }
+    .bridge-card--active {
+      background: rgba(255,255,255,0.18);
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    /* ── FAQ ── */
+    .faq {
+      background: var(--white);
+      padding: 80px 0;
+    }
+    .faq-list {
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .faq-q {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-q::after {
+      content: '+';
+      font-size: 22px;
+      color: var(--teal);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-q::after {
+      transform: rotate(45deg);
+    }
+    .faq-a {
+      font-size: 15px;
+      color: var(--mid);
+      line-height: 1.7;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding-top: 12px;
+    }
+
+    /* ── Final CTA ── */
+    .final-cta {
+      background: var(--navy);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 46px);
+      font-weight: 900;
+      color: white;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .final-cta p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.75);
+      max-width: 540px;
+      margin: 0 auto 36px;
+    }
+    .final-cta-note {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 12px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #111820;
+      padding: 32px 0;
+      text-align: center;
+    }
+    footer p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+    }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.8); }
+
+    /* ── Mobile ── */
+    @media (max-width: 760px) {
+      .nav-logo-text { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://thesmallbusinesshotline.com" class="nav-logo">
+      <div class="nav-logo-badge"><img src="sbh-badge.jpg" alt="SBH Logo"></div>
+      <div class="nav-logo-text">
+        The Small Business Hotline
+        <span>Powered by Frictionless AI</span>
+      </div>
+    </a>
+    <a href="YOUR_CALENDLY_LINK_HERE" class="nav-cta">Book Your Session — $1,000</a>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">The AI &amp; Profit Session</div>
+    <h1>Reclaim 5–10 Hours a Week.<br><span class="accent">Then 10x Your Profit.</span></h1>
+    <p class="hero-sub">A single 45-minute working session that gives you quick wins you can use this week — and a gap analysis that shows exactly what your business is leaving on the table.</p>
+    <div class="hero-cta-wrap">
+      <a href="YOUR_CALENDLY_LINK_HERE" class="btn-primary">Book Your AI &amp; Profit Session →</a>
+      <p class="hero-note">$1,000 · 45-minute session · Deliverable within 48 hours</p>
+    </div>
+    <div class="hero-bullets">
+      <div class="hero-bullet">5–10 hours back this week</div>
+      <div class="hero-bullet">Your personal Frictionless Gap Analysis</div>
+      <div class="hero-bullet">No tech background required</div>
+      <div class="hero-bullet">ROI before you hang up</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-bar"></div>
+
+<!-- ── Stats ── -->
+<section class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-number">88%</div>
+      <div class="stat-label">of SMB owners say they need AI</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">14%</div>
+      <div class="stat-label">are actually using it effectively</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">74%</div>
+      <div class="stat-label">gap — your competitive window</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">30yrs</div>
+      <div class="stat-label">running every customer-facing function</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Problem ── -->
+<section class="problem">
+  <div class="container--narrow">
+    <p class="section-label">Sound familiar?</p>
+    <h2 class="section-title">You're working harder than ever.<br>The business still runs on you.</h2>
+    <p class="section-body">You built this to have control over your time and income. Somewhere between the first customer and the tenth employee, the business stopped working for you — and you started working for it.</p>
+  </div>
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-card-icon">⏱</div>
+        <h3>At Capacity</h3>
+        <p>You haven't taken a real vacation without your phone in years. Every decision still runs through you.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">🤖</div>
+        <h3>AI Hype, No How</h3>
+        <p>Everyone says AI will change everything. Nobody's shown you how it actually fits your specific business.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">📊</div>
+        <h3>One Revenue Lever</h3>
+        <p>You're focused on getting new customers. But retention and expansion — where the real profit lives — aren't even on the radar.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">🔧</div>
+        <h3>Wrong Foundation</h3>
+        <p>Your business is organized around your departments and your convenience — not around your customer. That's why it can't scale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── What You Get ── -->
+<section class="deliverables">
+  <div class="container" style="text-align:center;">
+    <p class="section-label">What you walk away with</p>
+    <h2 class="section-title">Two deliverables. One session. Immediate ROI.</h2>
+    <p class="section-body">Most AI consultants give you tool recommendations. We give you quick wins for this week AND a map of your 10x opportunity.</p>
+    <div class="deliverables-grid">
+      <div class="deliverable-card deliverable-card--1">
+        <div class="deliverable-number">01</div>
+        <h3>Quick Wins Plan</h3>
+        <p>3–5 specific AI actions tailored to what you're doing right now. Deployable this week. No tech background required.</p>
+        <span class="deliverable-tag">ROI before you pay for the next thing</span>
+        <ul class="deliverable-list">
+          <li>Specific tools and actions, not generic advice</li>
+          <li>Estimated time saved per week for each win</li>
+          <li>Step-by-step setup for each recommendation</li>
+          <li>Most owners recover the $1,000 in week one</li>
+        </ul>
+      </div>
+      <div class="deliverable-card deliverable-card--2">
+        <div class="deliverable-number">02</div>
+        <h3>Frictionless Gap Analysis</h3>
+        <p>A visual of your business today vs. the Frictionless model — where resources should go, which revenue levers you're not pulling, and your real 10x opportunity.</p>
+        <span class="deliverable-tag">Your 10x roadmap starts here</span>
+        <ul class="deliverable-list">
+          <li>Resource allocation: where your time &amp; money go vs. where they should</li>
+          <li>A/R/E audit: which revenue levers you're leaving untouched</li>
+          <li>EAD opportunities: what to eliminate, automate, and delegate</li>
+          <li>Estimated profit opportunity — specific to your numbers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── How it works ── -->
+<section class="how">
+  <div class="container" style="text-align:center;">
+    <p class="section-label">Simple by design</p>
+    <h2 class="section-title">From session to savings in 3 steps</h2>
+    <p class="section-body">No prep required. No homework. Just 45 minutes of focused questions about your business — and a deliverable that pays for itself.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Book your 45-minute session</h3>
+        <p>We ask the right questions about your current operations, where your time goes, and where you're leaving money on the table.</p>
+        <p class="step-note">No prep or prior knowledge needed</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Receive your report within 48 hours</h3>
+        <p>Your Quick Wins Plan and Frictionless Gap Analysis delivered to your inbox — clear, specific, and actionable.</p>
+        <p class="step-note">Built by operators, not algorithms</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>You decide what's next</h3>
+        <p>Implement the quick wins yourself, or let us build your complete Frictionless AI Roadmap — a prioritized plan to close the gap.</p>
+        <p class="step-note">No pressure. The report stands alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── For / Not For ── -->
+<section class="fit">
+  <div class="container">
+    <div style="text-align:center;">
+      <p class="section-label">Is this for you?</p>
+      <h2 class="section-title">Built for a specific kind of owner</h2>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card fit-card--yes">
+        <h3>✓ You'll feel at home if...</h3>
+        <ul class="fit-list">
+          <li><span class="fit-yes-icon">✓</span> You run a service business doing $500K–$10M in revenue</li>
+          <li><span class="fit-yes-icon">✓</span> You're at capacity — growth has stalled and you're not sure why</li>
+          <li><span class="fit-yes-icon">✓</span> You've heard about AI everywhere but don't know where it fits your business</li>
+          <li><span class="fit-yes-icon">✓</span> You've tried tools or consultants that didn't deliver</li>
+          <li><span class="fit-yes-icon">✓</span> You want practical wins this week, not another 10-hour course</li>
+        </ul>
+      </div>
+      <div class="fit-card fit-card--no">
+        <h3>✗ This isn't for you if...</h3>
+        <ul class="fit-list">
+          <li><span class="fit-no-icon">✗</span> You want someone to build everything for you while you stay hands-off</li>
+          <li><span class="fit-no-icon">✗</span> You're not willing to spend 45 minutes on a working session</li>
+          <li><span class="fit-no-icon">✗</span> You're looking for a magic tool, not a real operating model</li>
+          <li><span class="fit-no-icon">✗</span> You believe more features = more success</li>
+          <li><span class="fit-no-icon">✗</span> You're not open to organizing your business around your customer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Differentiator ── -->
+<section class="diff">
+  <div class="container" style="text-align:center;">
+    <p class="section-label">Why Frictionless AI is different</p>
+    <h2 class="section-title">Everyone else leads with tools.<br>We lead with the model.</h2>
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="diff-card-label">Tech Companies</div>
+        <h3>Lead with AI &amp; Tools</h3>
+        <p>Sell technology without understanding how your business operates. Bolt AI onto a broken model and you just make the friction faster.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-card-label">Consultants</div>
+        <h3>Lead with Process</h3>
+        <p>Expensive engagements that produce strategy decks that sit on shelves. Great ideas, no practical path to execution.</p>
+      </div>
+      <div class="diff-card diff-card--highlight">
+        <div class="diff-card-label">Frictionless AI</div>
+        <h3>Leads with the Model</h3>
+        <p>30 years running every customer-facing function — sales, marketing, lead gen, customer service, account management. We know where the friction is and exactly what to do about it. AI amplifies a working model. It doesn't fix a broken one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── The Model ── -->
+<section class="model">
+  <div class="container">
+    <div class="model-inner">
+      <div class="model-content">
+        <p class="section-label">The Frictionless AI Model</p>
+        <h2 class="section-title">A modern operating system built around your customer</h2>
+        <p class="section-body">Most businesses organize around departments. Frictionless AI organizes around the customer journey — every resource, every dollar, every person mapped to where it actually creates value.</p>
+        <div class="model-stages">
+          <div class="model-stage">
+            <div class="model-stage-num">1</div>
+            <div class="model-stage-text">
+              <h4>Connect</h4>
+              <p>How your ideal customers find and engage with you</p>
+            </div>
+          </div>
+          <div class="model-stage">
+            <div class="model-stage-num">2</div>
+            <div class="model-stage-text">
+              <h4>Buyer Enablement</h4>
+              <p>How prospects move through their buying process</p>
+            </div>
+          </div>
+          <div class="model-stage">
+            <div class="model-stage-num">3</div>
+            <div class="model-stage-text">
+              <h4>Customer Enablement</h4>
+              <p>How customers get value and grow with you</p>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:13px; color:var(--muted); margin-top:12px;">Service &amp; Support spans the entire journey — before, during, and after the sale.</p>
+      </div>
+      <div class="model-visual">
+        <div class="model-visual-title">The Operating Principles</div>
+        <div class="model-rings">
+          <div class="model-ring">
+            <span class="model-ring-label">Eliminate</span>
+            <span class="model-ring-tag">Does this need to exist?</span>
+          </div>
+          <div class="model-ring">
+            <span class="model-ring-label">Automate</span>
+            <span class="model-ring-tag">Can technology handle it?</span>
+          </div>
+          <div class="model-ring">
+            <span class="model-ring-label">Delegate</span>
+            <span class="model-ring-tag">Does this need a human?</span>
+          </div>
+        </div>
+        <div style="margin-top:20px; border-top:1px solid rgba(255,255,255,0.1); padding-top:20px;">
+          <div style="font-size:12px; font-weight:700; color:#7EC8CA; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">The Value Test</div>
+          <div class="model-principle">
+            <div class="model-principle-item">
+              <span>Make Money</span><span>Revenue</span>
+            </div>
+            <div class="model-principle-item">
+              <span>Save Money</span><span>Cost</span>
+            </div>
+            <div class="model-principle-item">
+              <span>Save Time</span><span>Efficiency</span>
+            </div>
+          </div>
+          <div style="text-align:center; margin-top:10px; font-size:12px; color:rgba(255,255,255,0.45);">If it doesn't do one of these — don't do it.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Bridge ── -->
+<section class="bridge">
+  <div class="container">
+    <h2>The Session is the Beginning,<br>Not the End</h2>
+    <p>The Quick Wins Plan pays for the session. The Gap Analysis shows you what's possible. If you want to close that gap, we build your Frictionless AI Roadmap — a complete, prioritized plan for your business.</p>
+    <div class="bridge-cards">
+      <div class="bridge-card bridge-card--active">
+        <div class="bridge-card-price">$1,000</div>
+        <div class="bridge-card-name">AI &amp; Profit Session</div>
+        <p>Quick Wins Plan + Frictionless Gap Analysis. Immediate ROI. Standalone value.</p>
+      </div>
+      <div class="bridge-card">
+        <div class="bridge-card-price">$10,000</div>
+        <div class="bridge-card-name">Frictionless AI Roadmap</div>
+        <p>Complete operating model redesign. Our commitment: identify at least $20,000 in profit opportunity.</p>
+      </div>
+    </div>
+    <a href="YOUR_CALENDLY_LINK_HERE" class="btn-primary">Start with the $1,000 Session →</a>
+    <p style="font-size:13px; color:rgba(255,255,255,0.5); margin-top:12px;">No obligation to continue. The session delivers real value on its own.</p>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq">
+  <div class="container--narrow">
+    <p class="section-label">Questions you might be asking</p>
+    <h2 class="section-title" style="text-align:center;">Common questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">What exactly happens in the 45-minute session?</div>
+        <div class="faq-a">We ask structured questions about your current operations — where your time goes, how you get customers, what happens after someone buys, and where your team's energy is focused. No prep required. We do the analysis and deliver your report within 48 hours.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need to know anything about AI?</div>
+        <div class="faq-a">Not at all. The Quick Wins Plan is written in plain language with specific, step-by-step recommendations. If a $42/month tool can save you 8 hours a month, we'll show you exactly how to set it up. No IT department required.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the Frictionless Gap Analysis?</div>
+        <div class="faq-a">It's a visual map of where your business is today vs. where the Frictionless model says it should be — covering resource allocation across your customer journey, which revenue levers (Acquisition, Retention, Expansion) you're pulling vs. ignoring, and where AI and on-demand expertise could unlock the most profit.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's the difference between this and a $999 AI audit?</div>
+        <div class="faq-a">A tool audit tells you which software to buy. The AI &amp; Profit Session tells you why your business is stuck and what to do about it at a structural level. Quick Wins are just the beginning — the Gap Analysis is the real deliverable.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Am I obligated to buy the $10,000 Roadmap after the session?</div>
+        <div class="faq-a">Absolutely not. The $1,000 session is complete on its own — you'll walk away with real value regardless of what comes next. If the Gap Analysis shows an opportunity you want to act on, we'll have a conversation. No pressure.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why does the $1,000 session have ROI before I pay for anything else?</div>
+        <div class="faq-a">Because the Quick Wins Plan is built around what you're already doing and identifies the highest-impact, lowest-effort changes. Most business owners save 5–10 hours per week from the recommendations alone — at $100/hour, that's $500–$1,000/month recovered. The session pays for itself in week one.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Final CTA ── -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Ready to see where your 5–10 hours<br>are hiding — and your real profit potential?</h2>
+    <p>One 45-minute session. Two deliverables. Immediate ROI. You decide what comes next.</p>
+    <a href="YOUR_CALENDLY_LINK_HERE" class="btn-primary">Book Your AI &amp; Profit Session — $1,000 →</a>
+    <p class="final-cta-note">The only call a small business owner ever has to make. · thesmallbusinesshotline.com</p>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <p>© 2026 The Small Business Hotline &nbsp;·&nbsp; Powered by Frictionless AI &nbsp;·&nbsp; <a href="https://thesmallbusinesshotline.com">thesmallbusinesshotline.com</a> &nbsp;·&nbsp; <a href="https://frictionlessOS.ai">frictionlessOS.ai</a></p>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
