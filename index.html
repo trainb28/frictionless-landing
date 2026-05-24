@@ -136,7 +136,7 @@ nav {
 
 .hero-sub {
   font-size: clamp(16px, 2vw, 20px);
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.82);
   max-width: 560px;
   margin-top: 24px;
   line-height: 1.6;
@@ -178,10 +178,10 @@ nav {
 .btn-primary::after { content: '→'; }
 
 .btn-ghost {
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.85);
   font-size: 13px;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.4);
   padding-bottom: 2px;
   transition: color 0.2s;
 }
@@ -220,7 +220,7 @@ nav {
 
 .stat-label {
   font-size: 13px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.75);
   margin-top: 6px;
   line-height: 1.4;
   font-weight: 300;
@@ -315,7 +315,7 @@ section {
 
 .pain-body {
   font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.78);
   line-height: 1.65;
   font-weight: 300;
 }
@@ -361,7 +361,7 @@ section {
 
 .who-list li {
   font-size: 14px;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.85);
   display: flex;
   gap: 10px;
   line-height: 1.5;
@@ -435,9 +435,9 @@ section {
 .deliv-promise {
   font-size: 13px;
   font-style: italic;
-  color: var(--green);
+  color: #4FD9AB;
   margin-bottom: 24px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .deliv-list {
@@ -449,7 +449,7 @@ section {
 
 .deliv-list li {
   font-size: 13.5px;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.78);
   display: flex;
   gap: 10px;
   line-height: 1.45;
@@ -500,7 +500,7 @@ section {
 
 .step-body {
   font-size: 13.5px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.78);
   line-height: 1.65;
   font-weight: 300;
 }
@@ -508,10 +508,10 @@ section {
 .step-note {
   display: inline-block;
   margin-top: 16px;
-  font-size: 11px;
+  font-size: 12px;
   font-style: italic;
-  color: var(--green);
-  font-weight: 300;
+  color: #4FD9AB;
+  font-weight: 400;
 }
 
 /* ── DIFFERENTIATOR ── */
@@ -538,7 +538,7 @@ section {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.7);
 }
 
 .diff-cell {
@@ -554,10 +554,10 @@ section {
 .diff-cell.label {
   font-weight: 600;
   font-size: 13px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.8);
 }
 
-.diff-cell.bad { color: rgba(255,255,255,0.35); }
+.diff-cell.bad { color: rgba(255,255,255,0.7); }
 
 .diff-cell.good {
   color: var(--white);
@@ -596,7 +596,7 @@ section {
   display: block;
   margin-top: 12px;
   font-size: 12px;
-  color: var(--green);
+  color: #4FD9AB;
   font-style: normal;
   letter-spacing: 0.5px;
 }
@@ -641,7 +641,7 @@ section {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.75);
   margin-bottom: 8px;
 }
 
@@ -664,7 +664,7 @@ section {
 
 .price-note {
   font-size: 12px;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.7);
   margin-bottom: 28px;
   font-style: italic;
 }
@@ -679,7 +679,7 @@ section {
 
 .price-list li {
   font-size: 13.5px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
   display: flex;
   gap: 10px;
   line-height: 1.4;
@@ -708,13 +708,13 @@ section {
 
 .price-cta.primary { background: var(--green); color: var(--white); }
 .price-cta.primary:hover { background: var(--green-d); }
-.price-cta.secondary { border: 1px solid var(--border); color: rgba(255,255,255,0.5); }
-.price-cta.secondary:hover { border-color: rgba(255,255,255,0.3); color: var(--white); }
+.price-cta.secondary { border: 1px solid rgba(255,255,255,0.4); color: rgba(255,255,255,0.85); }
+.price-cta.secondary:hover { border-color: rgba(255,255,255,0.7); color: var(--white); }
 
 .price-guarantee {
   margin-top: 12px;
-  font-size: 11px;
-  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
   text-align: center;
   font-style: italic;
 }
@@ -738,17 +738,9 @@ section {
 
 .faq-item:hover { border-color: rgba(29,158,117,0.2); }
 
-.faq-q {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  line-height: 1.3;
-}
-
 .faq-a {
   font-size: 13.5px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.78);
   line-height: 1.65;
   font-weight: 300;
 }
@@ -793,7 +785,7 @@ section {
 
 .final-sub {
   font-size: 17px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.8);
   line-height: 1.6;
   margin-bottom: 44px;
   font-weight: 300;
@@ -809,7 +801,7 @@ section {
 
 .final-detail {
   font-size: 12px;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.7);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -830,10 +822,76 @@ footer {
   max-width: 1100px;
   margin: 0 auto;
   font-size: 12px;
-  color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.75);
 }
 
-footer a { color: var(--green); text-decoration: none; }
+footer a { color: #4FD9AB; text-decoration: underline; }
+
+/* ── ACCESSIBILITY ── */
+
+/* Skip-to-main link — hidden until keyboard focus */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--green);
+  color: var(--white);
+  padding: 10px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Visible focus styles for keyboard users */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #4FD9AB;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* FAQ heading styling — keeping the original visual via h3 */
+.faq-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  color: var(--white);
+}
+
+/* Visually-hidden helper for screen-reader-only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp {
@@ -877,11 +935,15 @@ footer a { color: var(--green); text-decoration: none; }
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to main content</a>
+
 <!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">Frictionless<span>OS</span>.ai</a>
+<nav aria-label="Primary">
+  <a href="/" class="nav-logo" aria-label="FrictionlessOS.ai — home">Frictionless<span>OS</span>.ai</a>
   <a href="https://calendly.com/bttrainor/video-call-with-brett-trainor-the-escapee-collective" class="nav-cta">Book a Free 20-Min Call</a>
 </nav>
+
+<main id="main">
 
 <!-- HERO -->
 <div style="max-width:1100px;margin:0 auto;padding:0 40px;">
@@ -895,7 +957,7 @@ footer a { color: var(--green); text-decoration: none; }
       <a href="https://calendly.com/bttrainor/video-call-with-brett-trainor-the-escapee-collective" class="btn-primary">Book a Free 20-Min Fit Call</a>
       <a href="#how" class="btn-ghost">See how it works</a>
     </div>
-    <p style="margin-top:16px;font-size:12px;color:rgba(255,255,255,0.3);font-style:italic;">Already know you're in? <a href="https://calendly.com/bttrainor/ai-growth-readiness-session" style="color:rgba(255,255,255,0.42);border-bottom:1px solid rgba(255,255,255,0.2);text-decoration:none;">Skip ahead and book the $1,000 AI &amp; Profit Session directly →</a></p>
+    <p style="margin-top:16px;font-size:12px;color:rgba(255,255,255,0.75);font-style:italic;">Already know you're in? <a href="https://calendly.com/bttrainor/ai-growth-readiness-session" style="color:rgba(255,255,255,0.9);border-bottom:1px solid rgba(255,255,255,0.4);text-decoration:none;">Skip ahead and book the $1,000 AI &amp; Profit Session directly →</a></p>
     <div style="display:none;">
     </div>
   </div>
@@ -954,22 +1016,22 @@ footer a { color: var(--green); text-decoration: none; }
     <h2 class="section-title reveal">You're working harder than ever. <em>The business still runs on you.</em></h2>
     <div class="pain-grid" style="margin-top:56px;">
       <div class="pain-card reveal">
-        <span class="pain-icon">⏱</span>
+        <span class="pain-icon" aria-hidden="true">⏱</span>
         <div class="pain-title">At Capacity</div>
         <div class="pain-body">You haven't taken a real vacation without your phone in years. Every decision still runs through you. The business needs you in the middle of everything — and you're exhausted.</div>
       </div>
       <div class="pain-card reveal" style="transition-delay:0.1s;">
-        <span class="pain-icon">🤖</span>
+        <span class="pain-icon" aria-hidden="true">🤖</span>
         <div class="pain-title">AI Hype — No How</div>
         <div class="pain-body">Everyone says AI will transform your business. And they're not wrong. But nobody has shown you where it actually fits your specific operation without buying a new tool you won't use.</div>
       </div>
       <div class="pain-card reveal" style="transition-delay:0.2s;">
-        <span class="pain-icon">📊</span>
+        <span class="pain-icon" aria-hidden="true">📊</span>
         <div class="pain-title">One Revenue Lever</div>
         <div class="pain-body">You're focused on getting new customers. But retention and expansion — where the real profit lives — aren't even on the radar. The easiest revenue is sitting in your existing base.</div>
       </div>
       <div class="pain-card reveal" style="transition-delay:0.3s;">
-        <span class="pain-icon">🔧</span>
+        <span class="pain-icon" aria-hidden="true">🔧</span>
         <div class="pain-title">Built for Survival, Not Scale</div>
         <div class="pain-body">Your business is organized around your departments and your convenience — not around how your customer actually buys and gets value. That's the real reason it can't grow without you.</div>
       </div>
@@ -982,7 +1044,7 @@ footer a { color: var(--green); text-decoration: none; }
   <div class="section-inner">
     <div class="section-eyebrow">What you walk away with</div>
     <h2 class="section-title reveal">Two deliverables. One session. <em>Immediate value.</em></h2>
-    <p style="margin-top:16px;font-size:16px;color:rgba(255,255,255,0.45);max-width:560px;font-weight:300;" class="reveal">The 45-minute session is the input. The custom report — delivered within 48 hours — is the deliverable. Most AI consultants give you tool recommendations. We give you a written plan built around your specific business.</p>
+    <p style="margin-top:16px;font-size:16px;color:rgba(255,255,255,0.78);max-width:560px;font-weight:300;" class="reveal">The 45-minute session is the input. The custom report — delivered within 48 hours — is the deliverable. Most AI consultants give you tool recommendations. We give you a written plan built around your specific business.</p>
     <div class="deliverables-grid" style="margin-top:48px;">
       <div class="deliv-card featured reveal">
         <div class="deliv-number">01</div>
@@ -1041,7 +1103,7 @@ footer a { color: var(--green); text-decoration: none; }
     <div style="margin-top:32px;padding:24px 32px;border:1px solid rgba(29,158,117,0.25);background:rgba(29,158,117,0.04);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;" class="reveal">
       <div>
         <div style="font-size:13px;font-weight:600;color:var(--white);">Ready to start? The fit call is free.</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.4);margin-top:4px;">20 minutes. No pitch. You decide if it's right for your business.</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.75);margin-top:4px;">20 minutes. No pitch. You decide if it's right for your business.</div>
       </div>
       <a href="https://calendly.com/bttrainor/video-call-with-brett-trainor-the-escapee-collective" style="background:var(--green);color:#fff;padding:12px 24px;font-size:13px;font-weight:600;text-decoration:none;border-radius:3px;white-space:nowrap;flex-shrink:0;">Book Your Free Fit Call →</a>
     </div>
@@ -1053,26 +1115,26 @@ footer a { color: var(--green); text-decoration: none; }
   <div class="section-inner">
     <div class="section-eyebrow">Why this is different</div>
     <h2 class="section-title reveal">Everyone else leads with tools. <em>We lead with the model.</em></h2>
-    <div class="diff-table reveal" style="margin-top:56px;transition-delay:0.15s;">
-      <div class="diff-row diff-header">
-        <div class="diff-cell label">Who</div>
-        <div class="diff-cell bad">Their approach</div>
-        <div class="diff-cell good">The gap it creates</div>
+    <div class="diff-table reveal" style="margin-top:56px;transition-delay:0.15s;" role="table" aria-label="How Frictionless AI compares to tech companies and consultants">
+      <div class="diff-row diff-header" role="row">
+        <div class="diff-cell label" role="columnheader">Who</div>
+        <div class="diff-cell bad" role="columnheader">Their approach</div>
+        <div class="diff-cell good" role="columnheader">The gap it creates</div>
       </div>
-      <div class="diff-row">
-        <div class="diff-cell label">Tech companies</div>
-        <div class="diff-cell bad">Lead with AI tools and automation</div>
-        <div class="diff-cell bad">Sell technology without understanding how a real business operates. Bolt AI onto a broken model and you just make the friction faster.</div>
+      <div class="diff-row" role="row">
+        <div class="diff-cell label" role="cell">Tech companies</div>
+        <div class="diff-cell bad" role="cell">Lead with AI tools and automation</div>
+        <div class="diff-cell bad" role="cell">Sell technology without understanding how a real business operates. Bolt AI onto a broken model and you just make the friction faster.</div>
       </div>
-      <div class="diff-row">
-        <div class="diff-cell label">Consultants</div>
-        <div class="diff-cell bad">Lead with frameworks and process</div>
-        <div class="diff-cell bad">Expensive engagements that produce strategy decks nobody executes. Great ideas. No practical path to a result this week.</div>
+      <div class="diff-row" role="row">
+        <div class="diff-cell label" role="cell">Consultants</div>
+        <div class="diff-cell bad" role="cell">Lead with frameworks and process</div>
+        <div class="diff-cell bad" role="cell">Expensive engagements that produce strategy decks nobody executes. Great ideas. No practical path to a result this week.</div>
       </div>
-      <div class="diff-row">
-        <div class="diff-cell label" style="color:var(--green);">Frictionless AI</div>
-        <div class="diff-cell good">Leads with the operating model</div>
-        <div class="diff-cell good">We start with your business — how your customer buys, where your time goes, what's creating friction. Then AI goes exactly where it belongs. Not everywhere. The right places.</div>
+      <div class="diff-row" role="row">
+        <div class="diff-cell label" role="cell" style="color:var(--green);">Frictionless AI</div>
+        <div class="diff-cell good" role="cell">Leads with the operating model</div>
+        <div class="diff-cell good" role="cell">We start with your business — how your customer buys, where your time goes, what's creating friction. Then AI goes exactly where it belongs. Not everywhere. The right places.</div>
       </div>
     </div>
     <div class="pullquote reveal" style="transition-delay:0.2s;">
@@ -1114,15 +1176,15 @@ footer a { color: var(--green); text-decoration: none; }
           <li>No obligation to continue</li>
         </ul>
         <a href="https://calendly.com/bttrainor/video-call-with-brett-trainor-the-escapee-collective" class="price-cta primary">Book a Free 20-Min Fit Call First</a>
-        <div class="price-guarantee">Or <a href="https://calendly.com/bttrainor/ai-growth-readiness-session" style="color:var(--green);text-decoration:underline;">book the $1,000 session directly</a> if you're ready</div>
+        <div class="price-guarantee">Or <a href="https://calendly.com/bttrainor/ai-growth-readiness-session" style="color:#4FD9AB;text-decoration:underline;">book the $1,000 session directly</a> if you're ready</div>
       </div>
       <div class="price-card">
         <div class="price-label">Step 2 — if you want to close the gap</div>
         <div class="price-title">Frictionless AI Roadmap</div>
-        <div style="font-size:14px;font-style:italic;color:var(--green);margin-top:6px;font-weight:300;">A business that runs without you — and makes more money doing it.</div>
+        <div style="font-size:14px;font-style:italic;color:#4FD9AB;margin-top:6px;font-weight:400;">A business that runs without you — and makes more money doing it.</div>
         <div class="price-amount">$10,000</div>
         <div class="price-note">One-time · 90-day engagement · Ongoing support included</div>
-        <p style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.7;font-weight:300;margin-bottom:32px;">After your Quick Start, you'll receive a Frictionless Scorecard showing exactly where your business is leaving money on the table. For owners who want to close that gap, the Roadmap is how we do it together — with a guaranteed $20,000+ in identified profit opportunity.</p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;font-weight:300;margin-bottom:32px;">After your Quick Start, you'll receive a Frictionless Scorecard showing exactly where your business is leaving money on the table. For owners who want to close that gap, the Roadmap is how we do it together — with a guaranteed $20,000+ in identified profit opportunity.</p>
         <a href="https://calendly.com/bttrainor/video-call-with-brett-trainor-the-escapee-collective" class="price-cta secondary">Book a Roadmap Conversation</a>
         <div class="price-guarantee">Every Roadmap client starts with the Quick Start. You'll know it's right before we ever discuss price.</div>
       </div>
@@ -1137,27 +1199,27 @@ footer a { color: var(--green); text-decoration: none; }
     <h2 class="section-title reveal">Straight answers.</h2>
     <div class="faq-grid reveal" style="margin-top:56px;transition-delay:0.15s;">
       <div class="faq-item">
-        <div class="faq-q">What exactly happens in the 45-minute session?</div>
+        <h3 class="faq-q">What exactly happens in the 45-minute session?</h3>
         <div class="faq-a">We ask structured questions about your operations — where your time goes, how you get and keep customers, what your team spends energy on. No prep required. We do the analysis and deliver your report within 48 hours.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Do I need to know anything about AI?</div>
+        <h3 class="faq-q">Do I need to know anything about AI?</h3>
         <div class="faq-a">Not at all. The Quick Wins Plan is written in plain language with specific, step-by-step recommendations. If a $40/month tool can save you 6 hours a week, we'll show you exactly how to set it up. No IT department required.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Am I obligated to buy the $10,000 Roadmap after?</div>
+        <h3 class="faq-q">Am I obligated to buy the $10,000 Roadmap after?</h3>
         <div class="faq-a">Absolutely not. The $1,000 session is complete on its own — you'll walk away with real, actionable value regardless of what comes next. If the Profit Opportunity Map shows a gap you want to close, we'll have a conversation. No pressure, ever.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What's the difference between this and a generic AI audit?</div>
+        <h3 class="faq-q">What's the difference between this and a generic AI audit?</h3>
         <div class="faq-a">A tool audit tells you which software to buy. This session tells you why your business is stuck at a structural level — and gives you specific fixes for this week. The Quick Wins are just the beginning.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How does the session pay for itself?</div>
+        <h3 class="faq-q">How does the session pay for itself?</h3>
         <div class="faq-a">The Quick Wins Plan targets your highest-impact, lowest-effort changes. Most owners save 5–10 hours per week from the recommendations. At $100/hour that's $500–$1,000/month recovered. The session typically pays for itself in the first week.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Who is behind this?</div>
+        <h3 class="faq-q">Who is behind this?</h3>
         <div class="faq-a">The Small Business Hotline is powered by the Escapee Collective — 375 decades of combined experience from former corporate executives who left big business to help businesses like yours grow. Real operators. Not theorists.</div>
       </div>
     </div>
@@ -1170,7 +1232,7 @@ footer a { color: var(--green); text-decoration: none; }
     <h2 class="final-title reveal">Start with a <em>free 20-minute call.</em></h2>
     <p class="final-sub reveal" style="transition-delay:0.15s;">Let's spend 20 minutes together to make sure the AI &amp; Profit Session is the right fit for your business. No pitch. No obligation. If it's a match, you'll leave knowing exactly what to expect — and what you'll walk away with.</p>
     <a href="https://calendly.com/bttrainor/video-call-with-brett-trainor-the-escapee-collective" class="btn-primary reveal" style="transition-delay:0.25s;font-size:16px;padding:18px 40px;">Book Your Free Fit Call</a>
-    <p class="reveal" style="transition-delay:0.32s;margin-top:14px;font-size:13px;color:rgba(255,255,255,0.35);">Already decided? <a href="https://calendly.com/bttrainor/ai-growth-readiness-session" style="color:var(--green);text-decoration:underline;">Book the $1,000 AI &amp; Profit Session directly →</a></p>
+    <p class="reveal" style="transition-delay:0.32s;margin-top:14px;font-size:13px;color:rgba(255,255,255,0.78);">Already decided? <a href="https://calendly.com/bttrainor/ai-growth-readiness-session" style="color:#4FD9AB;text-decoration:underline;">Book the $1,000 AI &amp; Profit Session directly →</a></p>
     <div class="final-details reveal" style="transition-delay:0.35s;">
       <span class="final-detail">20 minutes, free</span>
       <span class="final-detail">Zero obligation</span>
@@ -1181,9 +1243,11 @@ footer a { color: var(--green); text-decoration: none; }
 </section>
 
 <!-- FOOTER -->
+</main>
+
 <footer>
   <span>© 2026 The Small Business Hotline · Powered by Frictionless AI</span>
-  <span><a href="https://thesmallbusinesshotline.com">thesmallbusinesshotline.com</a></span>
+  <span><a href="https://thesmallbusinesshotline.com" aria-label="Visit The Small Business Hotline website">thesmallbusinesshotline.com</a></span>
 </footer>
 
 <script>
